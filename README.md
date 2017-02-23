@@ -2,7 +2,7 @@
 
 #### BDD/ JS exercise for Epicodus, 2/23/17
 
-### By Megan Warnock & Black Womack
+### By Megan Warnock & Blake Womack
 
 ## Description
 
