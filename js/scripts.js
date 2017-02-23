@@ -1,26 +1,26 @@
-var numbersArray = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+var onesArray = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 var index;
 //backend logic
 var RomanNumOnes = function(textInput) {
   //textInput = )
+  alert(textInput);
   if (index = textInput - 1) {
-    return numbersArray[index];
-  } else {
+    return onesArray[index];
+  //} else {
 
   }
 
 }
-
 
 //front end logic
 $(function() {
   $("#formOne").submit(function() {
 
   event.preventDefault();
-  var textInput2 = $("input#textInput").val();
-  var result = RomanNumOnes(textInput2);
-  console.log(numbersArray);
-  $("#output").text(numbersArray[index]);
+  var numbInput = $("input#textInput").val();
+  var result = RomanNumOnes(numbInput);
+  console.log(onesArray);
+  $("#output").text(result);
 
 
   });
