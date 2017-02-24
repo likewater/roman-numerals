@@ -3,23 +3,21 @@ var romanNumbIndex = [ ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
                        ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"],
                        ["M", "MM", "MMM", "MMMM"] ]
 
-var index;
+
 //backend logic
 var RomanNumOnes = function(textInput) {
-  var inputLength = textInput.length;
-  alert(inputLength);
-  var index = textInput;
-  alert(textInput);
-  if (inputLength = 1) {
-    return romanNumbIndex[0][index - 1];
-  //} else {
+  var result = []
+  var splitInput = textInput.split("").reverse();
+
+  for (i = 0; i < splitInput.length; i++) {
+    if(splitInput[i] === "0") {
+    } else {
+      var inputInt = parseInt(splitInput[i]);
+      result.unshift(romanNumbIndex[i][inputInt-1]);
+    }
   }
+  return result.join("");
 }
-
-
-
-
-
 
 //front end logic
 $(function() {
